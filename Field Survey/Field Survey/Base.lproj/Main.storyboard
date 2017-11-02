@@ -135,33 +135,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS6-dm-3Dc">
-                                <rect key="frame" x="16" y="134" width="333" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dez-HB-X9u">
+                                <rect key="frame" x="16" y="136" width="343" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mvG-eo-A8y" firstAttribute="top" secondItem="i9u-Ag-t0z" secondAttribute="top" constant="10" id="20E-Bu-0ja"/>
-                            <constraint firstItem="FS6-dm-3Dc" firstAttribute="leading" secondItem="NAg-Hm-6bb" secondAttribute="leadingMargin" id="80W-VS-I2H"/>
+                            <constraint firstItem="Dez-HB-X9u" firstAttribute="top" secondItem="Mfc-QE-sTk" secondAttribute="bottom" constant="10" id="42S-aD-CDb"/>
                             <constraint firstItem="Mfc-QE-sTk" firstAttribute="trailing" secondItem="NAg-Hm-6bb" secondAttribute="trailingMargin" constant="10" id="Dft-Eg-EgD"/>
                             <constraint firstItem="Mfc-QE-sTk" firstAttribute="top" secondItem="1YF-nq-rkn" secondAttribute="bottom" constant="10" id="Ihk-p8-ADK"/>
+                            <constraint firstItem="Dez-HB-X9u" firstAttribute="leading" secondItem="NAg-Hm-6bb" secondAttribute="leadingMargin" id="Wc7-80-Svg"/>
                             <constraint firstItem="mvG-eo-A8y" firstAttribute="leading" secondItem="NAg-Hm-6bb" secondAttribute="leadingMargin" id="Zpc-hn-Aaz"/>
+                            <constraint firstItem="Dez-HB-X9u" firstAttribute="trailing" secondItem="NAg-Hm-6bb" secondAttribute="trailingMargin" id="b08-w6-fAW"/>
                             <constraint firstItem="Mfc-QE-sTk" firstAttribute="leading" secondItem="mvG-eo-A8y" secondAttribute="trailing" constant="10" id="bCK-wd-ngv"/>
                             <constraint firstItem="1YF-nq-rkn" firstAttribute="top" secondItem="i9u-Ag-t0z" secondAttribute="top" constant="10" id="cR0-iW-F9L"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FS6-dm-3Dc" secondAttribute="trailing" constant="10" id="cmf-X5-JM6"/>
                             <constraint firstItem="1YF-nq-rkn" firstAttribute="trailing" secondItem="NAg-Hm-6bb" secondAttribute="trailingMargin" constant="10" id="eIW-vF-G6D"/>
                             <constraint firstItem="1YF-nq-rkn" firstAttribute="leading" secondItem="mvG-eo-A8y" secondAttribute="trailing" constant="10" id="j8r-bd-9hf"/>
-                            <constraint firstItem="FS6-dm-3Dc" firstAttribute="top" secondItem="mvG-eo-A8y" secondAttribute="bottom" constant="10" id="ynx-nQ-cvU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Dez-HB-X9u" secondAttribute="bottom" id="wf0-te-lV9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i9u-Ag-t0z"/>
                     </view>
                     <connections>
                         <outlet property="classificationIconImageView" destination="mvG-eo-A8y" id="tvz-P7-lqL"/>
                         <outlet property="dateLabel" destination="Mfc-QE-sTk" id="cpH-Fk-K6L"/>
-                        <outlet property="descriptionLabel" destination="FS6-dm-3Dc" id="H4L-L9-Sww"/>
+                        <outlet property="descriptionLabel" destination="Dez-HB-X9u" id="yNX-ix-xYU"/>
                         <outlet property="titleLabel" destination="1YF-nq-rkn" id="jlL-Dc-4jp"/>
                     </connections>
                 </viewController>

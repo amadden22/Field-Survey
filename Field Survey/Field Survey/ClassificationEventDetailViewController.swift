@@ -16,7 +16,8 @@ class ClassificationEventDetailViewController: UIViewController {
     
     @IBOutlet weak var classificationIconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
+    
     @IBOutlet weak var dateLabel: UILabel!
     
     override func viewDidLoad() {
